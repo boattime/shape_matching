@@ -1,0 +1,16 @@
+[package]
+name = "shape_matching"
+version = "0.1.0"
+edition = "2021"
+description = "A library for finding the most similar image from a set of photos"
+license = "MIT"
+
+[dependencies]
+opencv = { version = "0.93.4", features = ["clang-runtime"] }
+image = "0.24"
+rayon = "1.7"
+thiserror = "1.0"
+
+[[example]]
+name = "basic_usage"
+path = "examples/basic_usage.rs"
